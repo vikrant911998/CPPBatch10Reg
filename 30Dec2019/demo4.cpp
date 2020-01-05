@@ -1,3 +1,5 @@
+//Deletion of element at given index in array
+
 #include<iostream>
 using namespace std;
 
