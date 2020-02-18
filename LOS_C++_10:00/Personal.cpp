@@ -28,4 +28,37 @@ class Personal{
             cout<<"Age = "<<age<<endl;
             cout<<"Mobile = "<<mobile<<endl;
         }
+
+        void input2(string aadhar,string pancard){
+            this->aadhar = aadhar;
+            this->pancard = pancard;
+        }
+
+        void output2(){
+            cout<<"Aadhar = "<<aadhar<<endl;
+            cout<<"Pancard = "<<pancard<<endl;
+        }
+
+        string getFirstName(){
+            return firstName;
+        }
+        string getLastName(){
+            return lastName;
+        }
+        string getGender(){
+            return gender;
+        }
+        int getAge(){
+            return age;
+        }
+        long getMobile(){
+            return mobile;
+        }
+        string getAadhar(){
+            return aadhar;
+        }
+        string getPancard(){
+            return pancard;
+        }
+
 };
