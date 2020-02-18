@@ -41,7 +41,30 @@ class Losprocess{
             personal.input(firstName,lastName,gender,age,mobile);
 
             customer.setPersonalInfo(personal);
+
+            string type;
+            int duration;
+            double amount;
+
+            cout<<"Enter the Loan Type: HL(Home Loan), EL(Education Loan)"<<endl;
+            cin>>type;
+            cout<<"Enter the Duration of Loan"<<endl;
+            cin>>duration;
+            cout<<"Enter the Loan Amount"<<endl;
+            cin>>amount;
+
+            Loan loan;
+            loan.input(duration,amount,type);
+            customer.setLoanInfo(loan);
+            
+            cout<<endl;
+            cout<<"**************SOURCING INFORMATION**************"<<endl;
             customer.getPersonalInfo().output();
+            customer.getLoanInfo().output();
+            cout<<"Application Number = "<<customer.getApplication()<<endl;
+            cout<<"Stage = "<<customer.getStage()<<endl;
+            cout<<endl;
+
         }
 
 
