@@ -29,14 +29,18 @@ class Personal{
             cout<<"Mobile = "<<mobile<<endl;
         }
 
-        void input2(string aadhar,string pancard){
+        void setAadhar(string aadhar){
             this->aadhar = aadhar;
+            cout<<"Inside Set Aadhar "<<this->aadhar<<" "<<aadhar<<endl;
+        }
+
+        void setPancard(string pancard){
             this->pancard = pancard;
         }
 
         void output2(){
-            cout<<"Aadhar = "<<aadhar<<endl;
-            cout<<"Pancard = "<<pancard<<endl;
+            cout<<"Aadhar = "<<this->aadhar<<endl;
+            cout<<"Pancard = "<<this->pancard<<endl;
         }
 
         string getFirstName(){
